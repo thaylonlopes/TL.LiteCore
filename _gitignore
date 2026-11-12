@@ -1,0 +1,18 @@
+bin/
+obj/
+*.user
+*.suo
+.vs/
+.idea/
+.vscode/
+*.nupkg
+*.snupkg
+artifacts/
+*.log
+appsettings.Development.json
+
+# SQLite Databases
+*.db
+*.db-shm
+*.db-wal
+*.sqlite

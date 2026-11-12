@@ -1,0 +1,18 @@
+<Solution>
+  <Folder Name="/src/" />
+  <Folder Name="/src/Core/">
+    <Project Path="src/Core/TL.LiteCore.Application/TL.LiteCore.Application.csproj" />
+    <Project Path="src/Core/TL.LiteCore.Domain/TL.LiteCore.Domain.csproj" />
+  </Folder>
+  <Folder Name="/src/Infrastructure/">
+    <Project Path="src/Infrastructure/TL.LiteCore.Infrastructure/TL.LiteCore.Infrastructure.csproj" />
+  </Folder>
+  <Folder Name="/src/Presentation/">
+    <Project Path="src/Presentation/TL.LiteCore.Api/TL.LiteCore.Api.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/TL.LiteCore.ArchitectureTests/TL.LiteCore.ArchitectureTests.csproj" />
+    <Project Path="tests/TL.LiteCore.FunctionalTests/TL.LiteCore.FunctionalTests.csproj" />
+    <Project Path="tests/TL.LiteCore.UnitTests/TL.LiteCore.UnitTests.csproj" />
+  </Folder>
+</Solution>

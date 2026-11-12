@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+  <ItemGroup>
+    <ProjectReference Include="..\..\Core\TL.LiteCore.Application\TL.LiteCore.Application.csproj" />
+    <ProjectReference Include="..\..\Infrastructure\TL.LiteCore.Infrastructure\TL.LiteCore.Infrastructure.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Scalar.AspNetCore" />
+    <PackageReference Include="TL.HealthCheck" />
+    <PackageReference Include="TL.MiddlewareLibrary" />
+  </ItemGroup>
+</Project>

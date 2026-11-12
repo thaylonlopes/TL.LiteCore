@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\Core\TL.LiteCore.Domain\TL.LiteCore.Domain.csproj" />
+    <ProjectReference Include="..\..\src\Core\TL.LiteCore.Application\TL.LiteCore.Application.csproj" />
+    <ProjectReference Include="..\..\src\Infrastructure\TL.LiteCore.Infrastructure\TL.LiteCore.Infrastructure.csproj" />
+    <ProjectReference Include="..\..\src\Presentation\TL.LiteCore.Api\TL.LiteCore.Api.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentAssertions" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" />
+    <PackageReference Include="NetArchTest.Rules" />
+    <PackageReference Include="xunit" />
+    <PackageReference Include="xunit.runner.visualstudio" />
+    <PackageReference Include="coverlet.collector" />
+  </ItemGroup>
+</Project>

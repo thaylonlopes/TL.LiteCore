@@ -1,0 +1,6 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <ItemGroup>
+    <PackageReference Include="TL.BaseContracts" />
+    <PackageReference Include="TL.ExtensionLibrary.Domain" />
+  </ItemGroup>
+</Project>

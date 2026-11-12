@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <PackageType>Template</PackageType>
+    <PackageVersion>1.0.0</PackageVersion>
+    <PackageId>TL.LiteCore.Template</PackageId>
+    <Title>TL.LiteCore Template</Title>
+    <Authors>Thaylon Lopes</Authors>
+    <Description>Template corporativo .NET 9 para APIs RESTful síncronas, CRUDs transacionais diretos e BFFs com Minimal APIs, Result Pattern e SQLite.</Description>
+    <PackageTags>dotnet-new;templates;minimal-apis;clean-architecture;cqrs;mediatr;result-pattern;cpm;sqlite;net9</PackageTags>
+    <TargetFramework>net9.0</TargetFramework>
+
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <Copyright>Copyright © 2026 Thaylon Lopes</Copyright>
+
+    <IncludeContentInPack>true</IncludeContentInPack>
+    <IncludeBuildOutput>false</IncludeBuildOutput>
+    <ContentTargetFolders>content</ContentTargetFolders>
+    <NoWarn>$(NoWarn);NU5128;NU5119</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include=".template.config\**\*;src\**\*;tests\**\*;docs\**\*;*.sln;*.slnx;Directory.Packages.props;Directory.Build.props;ARCHITECTURE.md;nuget.config;_gitignore;_editorconfig;_dockerignore" 
+             Exclude="**\bin\**;**\obj\**;**\*.user;**\artifacts\**;**\nupkg\**;**\*.db*;**\*.db-shm;**\*.db-wal;.dockerignore" />
+    <Compile Remove="**\*" />
+
+    <None Include="README.md" Pack="true" PackagePath="\" />
+  </ItemGroup>
+</Project>

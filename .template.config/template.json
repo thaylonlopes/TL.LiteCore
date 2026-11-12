@@ -1,0 +1,51 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "Thaylon Lopes",
+  "classifications": [ "Web", "WebAPI", "Minimal API", "Clean Architecture", "FinOps", "Fast" ],
+  "identity": "TL.LiteCore.Template",
+  "name": "TL LiteCore Minimal API Starter Kit",
+  "shortName": "tl-litecore",
+  "tags": {
+    "language": "C#",
+    "type": "solution"
+  },
+  "sourceName": "TL.LiteCore",
+  "preferNameDirectory": true,
+  "sources": [
+    {
+      "rename": {
+        "_gitignore": ".gitignore",
+        "_editorconfig": ".editorconfig",
+        "_dockerignore": ".dockerignore"
+      },
+      "modifiers": [
+        {
+          "exclude": [
+            "**/bin/**",
+            "**/obj/**",
+            "**/.vs/**",
+            "**/.git/**",
+            "**/*.user",
+            "**/*.suo",
+            "**/*.lock.json",
+            "**/artifacts/**",
+            "**/nupkg/**",
+            "**/*.nupkg",
+            "**/*.db*",
+            ".dockerignore",
+            ".template.config/**"
+          ]
+        }
+      ]
+    }
+  ],
+  "symbols": {
+    "Framework": {
+      "type": "parameter",
+      "description": "Target framework for the project",
+      "datatype": "string",
+      "defaultValue": "net9.0",
+      "replaces": "net9.0"
+    }
+  }
+}
