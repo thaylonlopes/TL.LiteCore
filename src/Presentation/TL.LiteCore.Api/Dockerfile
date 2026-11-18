@@ -18,7 +18,7 @@ RUN dotnet publish "TL.LiteCore.Api.csproj" -c Release -o /app/publish \
     --no-restore \
     /p:UseAppHost=false
 
-FROM mcr.microsoft.com/dotnet/aspnet:9.0-chiseled-extra AS final
+FROM mcr.microsoft.com/dotnet/aspnet:9.0-noble-chiseled-extra AS final
 WORKDIR /app
 EXPOSE 8080
 ENV ASPNETCORE_URLS=http://+:8080
